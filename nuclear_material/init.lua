@@ -97,9 +97,9 @@ minetest.register_node("nuclear_material:nuclearbomb", {
 minetest.register_craft({
 	output = "nuclear_material:nuclearbomb",
 	recipe = {
-		{"default:steelblock", "default:steelblock", "default:steelblock"},
+		{"default:steelblock", "nuclear_material:uranium_block", "default:steelblock"},
 		{"default:steelblock", "nuclear_material:uranium_lump", "default:steelblock"},
-		{"default:steelblock", "default:steelblock", "default:steelblock"},
+		{"default:steelblock", "nuclear_material:uranium_block", "default:steelblock"},
 	},
 })
 

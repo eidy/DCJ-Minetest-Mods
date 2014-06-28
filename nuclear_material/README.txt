@@ -13,22 +13,22 @@ Uranium Block (nuclear_material:uranium_block)
 {"nuclear_material:uranium_lump","nuclear_material:uranium_lump"}
 
 Nuclear Bomb
-{"nuclear_material:uranium_block","nuclear_material:uranium_block","nuclear_material:uranium_block"}
-{"nuclear_material:uranium_block","nuclear_material:uranium_lump","nuclear_material:uranium_block"}
-{"nuclear_material:uranium_block","nuclear_material:uranium_block","nuclear_material:uranium_block"}
+{"default:steelblock","nuclear_material:uranium_block","default:steelblock"}
+{"default:steelblock","nuclear_material:uranium_lump","default:steelblock"}
+{"default:steelblock","nuclear_material:uranium_block","default:steelblock"}
 
 
 
 Mod dependencies: default
 
 Licenses:
-Sound -> GPLv2 by sfan5
+Sound -> LGPLv2 by sfan5
 Sourcecode -> WTFPL
 	The bomb physics use code based on the code used by the Nuke Mod by sfan5
 Textures/Graphics - > WTFPL
 	default_stone.png by Cisoun under WTFPL
 	uranium_lump.png based on the default:gold_lump image by PilzAdam under (WTFPL)
-	uraniu_block.png based on the copper_block by Zeg9 under CC BY-SA 3.0
+	uranium_block.png based on the copper_block by Zeg9 under CC BY-SA 3.0
 	uranium_mineral.png based on default_mese_mineral.png by ?
 
 
