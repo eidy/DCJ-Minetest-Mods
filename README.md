@@ -1,0 +1,1 @@
+Each folder is a separate Minetest mod made by Devyn Collier Johnson. The mods are licensed under WTFPL ecept for some textures and such that are burrowed from other mods. The licensing is compatible.

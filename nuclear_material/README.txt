@@ -23,9 +23,9 @@ Mod dependencies: default
 
 Licenses:
 Sound -> GPLv2 by sfan5
-Sourcecode -> GPLv3
+Sourcecode -> WTFPL
 	The bomb physics use code based on the code used by the Nuke Mod by sfan5
-Textures/Graphics - >
+Textures/Graphics - > WTFPL
 	default_stone.png by Cisoun under WTFPL
 	uranium_lump.png based on the default:gold_lump image by PilzAdam under (WTFPL)
 	uraniu_block.png based on the copper_block by Zeg9 under CC BY-SA 3.0

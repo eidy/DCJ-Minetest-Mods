@@ -1,6 +1,6 @@
 --Nuclear Materials--
 --by Devyn Collier Johnson (DevynCJohnson@Gmail.com)
---GPLv3 2014
+--WTFPL 2014
 
 --Uranium Lump
 
