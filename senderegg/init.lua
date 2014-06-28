@@ -13,9 +13,8 @@ minetest.register_craftitem("senderegg:senderman", {
 
 minetest.register_craft({
 	output = "sendereg:senderman",
+	type = "shapeless".
 	recipe = {
-		{"spawneggs:egg", "default:nyancat", ""},
-		{"", "", ""},
-		{"", "", ""},
+		{"spawneggs:egg", "default:nyancat"},
 	},
 })
