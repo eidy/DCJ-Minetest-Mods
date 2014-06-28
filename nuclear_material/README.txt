@@ -3,19 +3,19 @@ This mod borrows some code from other mods. Please see the licensing below.
 
 
 Description:
-This mod adds uranium ores to the mapgen. Mining an uranium ore yields one uranium lump. The uranium lump can be used in the furnace (burntime=20), or it can be used to craft various objects. Crafting four uranium lumps produces a uranium block. Uranium blocks and one uranum lump can be used to make a nuclear bomb. The nuclear bomb as an explosion range of thirty voxels in all directions. Uranium blocks and ores have a soft glow. This radiation is easy to spot in dark caves.
+This mod adds radium ores to the mapgen. Mining an radium ore yields one radium lump. The radium lump can be used in the furnace (burntime=20), or it can be used to craft various objects. Crafting four radium lumps produces a radium block. Radium blocks and one uranum lump can be used to make a nuclear bomb. The nuclear bomb as an explosion range of thirty voxels in all directions. Radium blocks and ores have a soft glow. This radiation is easy to spot in dark caves.
 
 
 Recipes:
 
-Uranium Block (nuclear_material:uranium_block)
-{"nuclear_material:uranium_lump","nuclear_material:uranium_lump"}
-{"nuclear_material:uranium_lump","nuclear_material:uranium_lump"}
+Radium Block (nuclear_material:radium_block)
+{"nuclear_material:radium_lump","nuclear_material:radium_lump"}
+{"nuclear_material:radium_lump","nuclear_material:radium_lump"}
 
 Nuclear Bomb
-{"default:steelblock","nuclear_material:uranium_block","default:steelblock"}
-{"default:steelblock","nuclear_material:uranium_lump","default:steelblock"}
-{"default:steelblock","nuclear_material:uranium_block","default:steelblock"}
+{"default:steelblock","nuclear_material:radium_block","default:steelblock"}
+{"default:steelblock","nuclear_material:radium_lump","default:steelblock"}
+{"default:steelblock","nuclear_material:radium_block","default:steelblock"}
 
 
 
@@ -27,9 +27,9 @@ Sourcecode -> WTFPL
 	The bomb physics use code based on the code used by the Nuke Mod by sfan5
 Textures/Graphics - > WTFPL
 	default_stone.png by Cisoun under WTFPL
-	uranium_lump.png based on the default:gold_lump image by PilzAdam under (WTFPL)
-	uranium_block.png based on the copper_block by Zeg9 under CC BY-SA 3.0
-	uranium_mineral.png based on default_mese_mineral.png by ?
+	radium_lump.png based on the default:gold_lump image by PilzAdam under (WTFPL)
+	radium_block.png based on the copper_block by Zeg9 under CC BY-SA 3.0
+	radium_mineral.png based on default_mese_mineral.png by ?
 
 
 

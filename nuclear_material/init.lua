@@ -2,40 +2,40 @@
 --by Devyn Collier Johnson (DevynCJohnson@Gmail.com)
 --WTFPL 2014
 
---Uranium Lump
+--Radium Lump
 
-minetest.register_craftitem("nuclear_material:uranium_lump", {
-	description = "Uranium Lump",
-	inventory_image = "uranium_lump.png",
+minetest.register_craftitem("nuclear_material:radium_lump", {
+	description = "Radium Lump",
+	inventory_image = "radium_lump.png",
 })
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "nuclear_material:uranium_lump",
+	recipe = "nuclear_material:radium_lump",
 	burntime = "20",
 })
 
---Uranium Ore
+--Radium Ore
 
-minetest.register_node("nuclear_material:uranium_ore", {
-	description = "Uranium Ore",
-	tiles = {"default_stone.png^uranium_mineral.png"},
+minetest.register_node("nuclear_material:radium_ore", {
+	description = "Radium Ore",
+	tiles = {"default_stone.png^radium_mineral.png"},
 	light_source = 2,
 	is_ground_content = true,
 	groups = {cracky=3},
-	drop = 'nuclear_material:uranium_lump',
+	drop = 'nuclear_material:radium_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_craft({
 	type = "cooking",
-	recipe = "nuclear_material:uranium_lump",
-	output = "nuclear_material:uranium_ore",
+	recipe = "nuclear_material:radium_lump",
+	output = "nuclear_material:radium_ore",
 })
 
 minetest.register_ore({
 	ore_type = "scatter",
-	ore = "nuclear_material:uranium_ore",
+	ore = "nuclear_material:radium_ore",
 	wherein = "default:stone",
 	clust_scarcity = 15*15*15,
 	clust_num_ores = 5,
@@ -44,11 +44,11 @@ minetest.register_ore({
 	height_max = -10,
 })
 
---Uranium Block
+--Radium Block
 
-minetest.register_node("nuclear_material:uranium_block", {
-	description = "Uranium Block",
-	tiles = {"uranium_block.png"},
+minetest.register_node("nuclear_material:radium_block", {
+	description = "Radium Block",
+	tiles = {"radium_block.png"},
 	light_source = 2,
 	is_ground_content = true,
 	groups = {cracky=1,level=2},
@@ -56,17 +56,17 @@ minetest.register_node("nuclear_material:uranium_block", {
 })
 
 minetest.register_craft({
-	output = "nuclear_material:uranium_block",
+	output = "nuclear_material:radium_block",
 	recipe = {
-		{"nuclear_material:uranium_lump", "nuclear_material:uranium_lump"},
-		{"nuclear_material:uranium_lump", "nuclear_material:uranium_lump"},
+		{"nuclear_material:radium_lump", "nuclear_material:radium_lump"},
+		{"nuclear_material:radium_lump", "nuclear_material:radium_lump"},
 	},
 })
 
 
 --Nuclear Bomb
 
-local NUKE_RANGE = 30
+local NUKE_RANGE = 50
 
 minetest.register_node("nuclear_material:nuclearbomb", {
 	description = "Nuclear Bomb",
@@ -97,9 +97,9 @@ minetest.register_node("nuclear_material:nuclearbomb", {
 minetest.register_craft({
 	output = "nuclear_material:nuclearbomb",
 	recipe = {
-		{"default:steelblock", "nuclear_material:uranium_block", "default:steelblock"},
-		{"default:steelblock", "nuclear_material:uranium_lump", "default:steelblock"},
-		{"default:steelblock", "nuclear_material:uranium_block", "default:steelblock"},
+		{"default:steelblock", "nuclear_material:radium_block", "default:steelblock"},
+		{"default:steelblock", "nuclear_material:radium_lump", "default:steelblock"},
+		{"default:steelblock", "nuclear_material:radium_block", "default:steelblock"},
 	},
 })
 
