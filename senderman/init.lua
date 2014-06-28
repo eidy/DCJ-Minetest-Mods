@@ -1,5 +1,7 @@
 dofile(minetest.get_modpath("senderman").."/api.lua")
 
+--Senderman
+
 mobs:register_mob("senderman:senderman", {
 	type = "monster",
 	hp_max = 30,
@@ -41,7 +43,30 @@ mobs:register_mob("senderman:senderman", {
 	}
 })
 
-mobs:register_spawn("senderman:senderman", {"default:stone", "default:dirt", "default:sand", "default:gravel", "default:clay", "default:cobble", "default:mossycobble", "default:dirt_with_grass", "default:desert_sand", "default:desert_stone"}, 20, -1, 4000, 3, 31000)
+mobs:register_spawn("senderman:senderman", {"default:stone", "default:dirt", "default:sand", "default:gravel", "default:clay", "default:cobble", "default:mossycobble", "default:dirt_with_grass", "default:desert_sand", "default:desert_stone"}, 20, -1, 9900, 3, 31000)
+
+--Egg
+
+minetest.register_craftitem("senderman:senderegg", {
+	description = "Spawn Senderman",
+	inventory_image = "senderman_egg.png",
+	wield_image = inventory_image,
+	on_place = function(itemstack, placer, pointed_thing)
+		if pointed_thing.above then
+			minetest.env:add_entity(pointed_thing.above, "senderman:senderman")
+			itemstack:take_item()
+		end
+		return itemstack
+	end,
+})
+
+minetest.register_craft({
+	output = "senderman:senderegg",
+	type = "shapeless",
+	recipe = {"spawneggs:egg", "default:nyancat"},
+})
+
+--Log
 
 if minetest.setting_get("log_mods") then
 	minetest.log("action", "senderman is watching")

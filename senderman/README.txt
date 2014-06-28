@@ -1,11 +1,18 @@
 Senderman by Devyn Collier Johnson (DevynCJohnson@Gmail.com)
-Based on the Mobs-Mod by PilzAdam
+Based on the Mobs-Mod by PilzAdam, and the egg based on the SpawnEggs mod by thefamilygrog66
 
 
 Description:
 This mod provides a chance to meet Senderman on Minetest.
 
-Mod dependencies: default
+Mod dependencies: default, spawneggs
+
+Recipes:
+
+Senderman Egg
++---------------+---------------+
+| spawning egg  |    nyancat    |
++---------------+---------------+
 
 License:
 Sourcecode and Graphics -> WTFPL
