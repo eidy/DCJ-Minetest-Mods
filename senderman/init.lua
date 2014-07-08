@@ -11,8 +11,8 @@ mobs:register_mob("senderman:senderman", {
 	textures = {"sender_man.png"},
 	visual_size = {x=8,y=8},
 	makes_footstep_sound = false,
-	view_range = 20,
-	walk_velocity = 2,
+	view_range = 30,
+	walk_velocity = 3,
 	run_velocity = 6,
 	damage = 4,
 	drops = {
@@ -26,7 +26,7 @@ mobs:register_mob("senderman:senderman", {
 	drawtype = "front",
 	water_damage = 0,
 	lava_damage = 0,
-	light_damage = 0,
+	light_damage = 2,
 	attack_type = "dogfight",
 	jump = true,
 	animation = {
@@ -43,7 +43,7 @@ mobs:register_mob("senderman:senderman", {
 	}
 })
 
-mobs:register_spawn("senderman:senderman", {"default:stone", "default:dirt", "default:sand", "default:gravel", "default:clay", "default:cobble", "default:mossycobble", "default:dirt_with_grass", "default:desert_sand", "default:desert_stone"}, 20, -1, 9900, 3, 31000)
+mobs:register_spawn("senderman:senderman", {"default:dirt_with_grass", "default:desert_sand"}, 3, -1, 9999, 3, 31000)
 
 --Egg
 

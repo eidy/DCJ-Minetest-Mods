@@ -1,1 +1,1 @@
-Each folder is a separate Minetest mod made by Devyn Collier Johnson. The mods are licensed under WTFPL except for some textures and such that are burrowed from other mods. The licensing is compatible.
+Each folder is a separate Minetest mod made by Devyn Collier Johnson. To install a mod, copy the desired folder to your "mods" folder. The folders do not need to be renamed. The mods are licensed under WTFPL except for some textures and such that are burrowed from other mods. The licensing is compatible.
